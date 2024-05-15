@@ -1,0 +1,3 @@
+This python script executes in Windows 11 environment, looking for screenshot produced by any software (Windows 11 screenshot seems to be lagging, so I don't recommend it, I use Nvidia GeForce Experience and Alt-F1) in a defined folder, once it detects a new screenshot it sends it to GPT/LLM to understand the text and dialog options presented, takes the GPT answer and speaks the recommendation aloud.
+
+Current version uses gpt-4o model by OpenAI, operating multimodally (i.e. it sends text and image prompt) and requires API key to work. I also have version that works with Ollama and local Llama3 model, it needs Google Tesseract OCR engine to provide just text from the screenshot to the Llama3.
